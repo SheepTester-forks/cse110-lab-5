@@ -15,6 +15,9 @@ const voicesReady = new Promise(resolve => {
 window.addEventListener('DOMContentLoaded', init)
 
 async function init () {
+  document.body.style.margin = 0
+  document.querySelector('header').style.boxSizing = 'border-box'
+
   const voiceSelect = document.getElementById('voice-select')
   const input = document.getElementById('text-to-speak')
   const face = document.querySelector('#explore > img')

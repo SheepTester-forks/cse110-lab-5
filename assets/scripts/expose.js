@@ -5,6 +5,9 @@ window.addEventListener('DOMContentLoaded', init)
 const confetti = new JSConfetti()
 
 function init () {
+  document.body.style.margin = 0
+  document.querySelector('header').style.boxSizing = 'border-box'
+
   const hornSelect = document.getElementById('horn-select')
   const hornImage = document.querySelector('#expose > img')
   const audio = document.querySelector('audio')
